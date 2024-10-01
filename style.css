@@ -8,7 +8,6 @@ height: 30px;
     width: 95%;
     padding:10px;
 }
-
 .nav-link{
     text-decoration: none;
     color: black;
@@ -42,7 +41,6 @@ padding: 100px;
 padding-top: 200px;
 }
 .products{
-
     gap: 20px;
     display: grid;
     padding: 10px;
@@ -84,16 +82,13 @@ text-align: center;
     .facility{
         background-color: #D91656;
         text-align: center;
-
         padding: 10px;
-    }
-    
+    }  
     .facility-grid img{
         width: 20%;
         height: 40%;
 
     }
-    
     .facility-grid{
         gap: 20px;
         display: flex;
