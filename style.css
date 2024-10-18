@@ -5,8 +5,7 @@ height: 30px;
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    padding:10px;
+    align-items: center;
 }
 .nav-link{
     text-decoration: none;
@@ -218,50 +217,48 @@ text-align: center;
         display: none;
     }
 } */
+
+
+/* Hide the checkbox */
 .menu-icon {
     display: none;
 }
 
-.menu-icon:checked + .menu-toggle + .nav-div {
-    display: block;
+/* Style for the hamburger icon */
+.menu-toggle {
+    font-size: 24px;
+    color: #e0e0e0;
+    display: none; /* Initially hidden on larger screens */
+    cursor: pointer;
 }
 
-.menu-toggle {
-    display: none;
+/* Navbar Links */
+.nav-div {
+    display: flex;
+    gap: 20px;
 }
+
 
 @media (max-width: 768px) {
-    .menu-icon {
-        display: block;
+   
+    .nav-div {
+        display: none;
+        flex-direction: column;
+        background-color: #1f1f1f;
         position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        opacity: 0; /* Hide the checkbox */
-        z-index: 2; /* Ensure it is clickable */
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid #333;
     }
     .menu-toggle {
         display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-      
-        color: rgb(0, 0, 0);
-        text-align: center;
-        line-height: 30px;
-        cursor: pointer;
-        z-index: 1; /* Ensure it is below the checkbox */
-    }
-    .nav-div {
-        display: none;
     }
     .menu-icon:checked + .menu-toggle + .nav-div {
-        display: block;
+        display: flex;
     }
-    
 }
 
 
